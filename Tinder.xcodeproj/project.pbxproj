@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48DDA6EB244896E2008909D9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DDA6EA244896E2008909D9 /* CardView.swift */; };
 		48EFD2BB2447760600786B84 /* HomeBottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EFD2BA2447760600786B84 /* HomeBottomControlsStackView.swift */; };
 		48EFD2BD24477D2700786B84 /* TopNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EFD2BC24477D2700786B84 /* TopNavigationStackView.swift */; };
 		48F2D9E22444C1D800CD9BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F2D9E12444C1D800CD9BCE /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48DDA6EA244896E2008909D9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		48EFD2BA2447760600786B84 /* HomeBottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomControlsStackView.swift; sourceTree = "<group>"; };
 		48EFD2BC24477D2700786B84 /* TopNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationStackView.swift; sourceTree = "<group>"; };
 		48F2D9DE2444C1D800CD9BCE /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,7 @@
 			children = (
 				48EFD2BA2447760600786B84 /* HomeBottomControlsStackView.swift */,
 				48EFD2BC24477D2700786B84 /* TopNavigationStackView.swift */,
+				48DDA6EA244896E2008909D9 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				48EFD2BB2447760600786B84 /* HomeBottomControlsStackView.swift in Sources */,
 				48F2D9E22444C1D800CD9BCE /* AppDelegate.swift in Sources */,
 				48F2D9F52444C40B00CD9BCE /* Extensions+UIView.swift in Sources */,
+				48DDA6EB244896E2008909D9 /* CardView.swift in Sources */,
 				48EFD2BD24477D2700786B84 /* TopNavigationStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
