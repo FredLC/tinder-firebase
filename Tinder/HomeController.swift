@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeController: UIViewController {
     
     let topStackView = TopNavigationStackView()
     let cardsDeckView = UIView()
@@ -24,9 +24,23 @@ class ViewController: UIViewController {
     }
     
     fileprivate func setupDummyCards() {
-        let cardView = CardView(frame: .zero)
-        cardsDeckView.addSubview(cardView)
-        cardView.fillSuperview()
+        let users = [
+            User(name: "Kelly", age: 18, profession: "Professional DJ", imageName: "lady5c"),
+            User(name: "Jane", age: 23, profession: "Teacher", imageName: "lady4c")
+        ]
+        
+        users.forEach { (user) in
+            let cardView = CardView(frame: .zero)
+            cardView.imageView.image = UIImage(named: user.imageName)
+            
+            let attributedText = NSMutableAttributedString(string: user.name, attributes: [.font: UIFont.systemFont(ofSize: 32, weight: .bold)])
+            attributedText.append(NSAttributedString(string: "  \(user.age)", attributes: [.font: UIFont.systemFont(ofSize: 24, weight: .regular)]))
+            attributedText.append(NSAttributedString(string: "\n\(user.profession)", attributes: [.font: UIFont.systemFont(ofSize: 20, weight: .regular)]))
+            
+            cardView.informationLabel.attributedText = attributedText
+            cardsDeckView.addSubview(cardView)
+            cardView.fillSuperview()
+        }
     }
 
     
